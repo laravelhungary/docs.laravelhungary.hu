@@ -1,0 +1,295 @@
+/* ----------------------------------- */
+/* ÁLTALÁNOS */
+
+body {
+  font-family: "Source Sans Pro",sans-serif;
+  color: #525252;
+  background-color: #fff;
+}
+
+a
+{
+  color: $linkcolor;
+  text-decoration: none;
+  font-size: 14.5px;
+}
+
+a:hover
+{
+  color: $linkhovercolor;
+  text-decoration: none;
+}
+
+/* ----------------------------------- */
+/* NAVBAR */
+
+.navbar
+{
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-default
+{
+  background-color: $red;
+
+  .navbar-brand
+  {
+    color: #fff;
+  }
+  .navbar-nav>li>a
+  {
+    color: #fff;
+  }
+}
+
+/* ----------------------------------- */
+/* CONTENT */
+
+.container
+{
+  p {
+    line-height: 1.7;
+    font-size: 14.5px;
+  }
+}
+
+.article
+{
+  ul
+  {
+    li
+    {
+      margin: 8px;
+      line-height: 1.65;
+    }
+
+  }
+  h1
+  {
+    font-size: 48px;
+    font-weight: normal;
+    color: #525252;
+    margin-bottom: 50px;
+  }
+  h2
+  {
+    border-top: 1px solid $bordercolor;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  h3
+  {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  h4
+  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  blockquote
+  {
+    background-color: #999 !important;
+    color: #fff !important;
+    border-left: none !important;
+    border-radius: 4px;
+
+    a
+    {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  table
+  {
+    th {
+      border: 1px solid #dee0df;
+      padding: 10px;
+      font-weight: bold;
+    }
+    td
+    {
+      border: 1px solid #dee0df;
+      padding: 10px;
+
+      a
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+ul:nth-child(2)
+{
+  list-style-type: none;
+  margin-bottom: 50px;
+
+  li
+  {
+    margin: 0;
+    font-weight: bold;
+    ul
+    {
+      margin-bottom: 0;
+      li
+      {
+        font-weight: normal;
+      }
+    }
+  }
+  li:before
+  {
+
+    content: '#';
+    font-size: 14.5px;
+    color: $red;
+    opacity: .3;
+    margin-right: 5px;
+    font-weight: bold;
+  }
+}
+
+
+
+/* ----------------------------------- */
+/* SIDEBAR */
+
+.sidebar
+{
+  border-right: 1px solid $bordercolor;
+
+  ul
+  {
+    margin-left: 0;
+    padding: 0;
+
+    li
+    {
+      ul
+      {
+        border-top: 1px solid $bordercolor;
+        margin-top: 5px;
+        padding-top: 5px;
+
+        li
+        {
+          margin: 0;
+          padding: 0;
+          font-size: 14.5px;
+
+        }
+      }
+    }
+  }
+
+  ul>li
+  {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+
+  a
+  {
+    line-height: 1.65;
+  }
+
+  a:hover
+  {
+    text-decoration: none;
+  }
+
+}
+
+
+
+
+/* ----------------------------------- */
+/* PANELEK */
+
+.panel-default
+{
+  border: none;
+  padding: 0;
+  margin: 0;
+
+
+  .panel-heading
+  {
+    border: none;
+    background-color: #F9F9F9;
+
+    h3
+    {
+      color: $red !important;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}
+
+.panel-body
+{
+  border: none;
+}
+
+/* ----------------------------------- */
+/* FORRÁSKÓDOK */
+
+.com
+{
+  color: #999 !important;
+}
+
+.typ
+{
+  color: $red !important;
+}
+
+.kwd
+{
+  color: #07a !important;
+}
+
+.boolean
+{
+  color: #DA564A !important;
+}
+
+
+pre
+{
+  font-family: Consolas,Monaco,'Andale Mono',monospace !important;
+  border: none !important;
+  background-color: #F9F9F9 !important;
+  padding: 15px !important;
+  border-bottom: 2px solid $bordercolor !important;
+  overflow: inherit !important;
+  white-space: pre-wrap; /* CSS3 */
+  white-space: -moz-pre-wrap; /* Mozilla, post millennium */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+
+  .prettyprint
+  {
+    border: none;
+  }
+}
+
+/* ------------------------------ */
+/* FOOTER */
+
+footer
+{
+  color: #999;
+}
