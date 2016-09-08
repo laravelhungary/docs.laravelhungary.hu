@@ -71,5 +71,8 @@
 
 </div>
 
+@if(View::exists('ga'))
+    @include('ga')
+@endif
 </body>
 </html>
